@@ -16,7 +16,7 @@ public class DataController {
 
     @RequestMapping(value = "/device-data")
     public Map<String,Data> getLatestData(){
-
+        System.out.println("Executing*******!");
         Data data1=new Data("1","Desktop Data");
         Data data2=new Data("2","Mobile Data");
         Data data3=new Data("3","Raw Data");

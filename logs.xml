@@ -9205,3 +9205,486 @@
 12523 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
 12524 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
 12524 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+12761 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+12761 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+12901 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12914 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'zuulEndpoint' has been autodetected for JMX exposure
+12915 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+12916 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+12918 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+12919 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+12919 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+12922 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+12937 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+12948 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+12964 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'zuulEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=zuulEndpoint,type=RoutesEndpoint]
+12968 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=134d26af,type=ConfigurationPropertiesRebinder]
+12974 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+12979 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+13201 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+13210 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+13391 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+13393 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+13559 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+13559 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+13806 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13807 [main] DEBUG c.n.d.endpoint.EndpointUtils - The availability zone for the given region us-east-1 are [defaultZone]
+13810 [main] DEBUG c.n.d.s.r.aws.ConfigClusterResolver - Config resolved to [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+14049 [main] DEBUG c.n.d.s.r.a.ZoneAffinityClusterResolver - Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+14071 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14071 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14071 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14071 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14071 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14071 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+14071 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14071 [main] DEBUG c.n.d.s.t.d.SessionedEurekaHttpClient - Ending a session and starting anew
+14074 [main] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Created client for url: http://localhost:8761/eureka/
+14121 [main] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+14122 [main] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+14122 [main] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+14122 [main] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+14122 [main] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+14247 [main] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+14248 [main] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+14248 [main] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+14248 [main] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+14249 [main] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/?; statusCode=200
+14249 [main] DEBUG c.n.d.s.t.d.RedirectingEurekaHttpClient - Pinning to endpoint null
+14249 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14249 [main] DEBUG c.netflix.discovery.DiscoveryClient - Got full registry with apps hashcode UP_3_
+14250 [main] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+14251 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+14254 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14276 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1489346778721 with initial instances count: 3
+14391 [main] INFO  o.s.c.n.e.EurekaDiscoveryClientConfiguration - Registering application zuul-proxy with eureka with status UP
+14391 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1489346778837, current=UP, previous=STARTING]
+14393 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.InstanceInfoReplicator - Executing on-demand update of local InstanceInfo
+14393 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.InstanceInfoReplicator - Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+14395 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955: registering service...
+14395 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.s.t.d.SessionedEurekaHttpClient - Ending a session and starting anew
+14397 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+14398 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Created client for url: http://localhost:8761/eureka/
+14408 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+14408 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+14408 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+14410 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+14428 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+14432 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+14437 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+14439 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+14439 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+14439 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+14439 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+14440 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP POST http://localhost:8761/eureka//apps/ZUUL-PROXY with instance localhost:zuul-proxy:9955; statusCode=204
+14440 [DiscoveryClient-InstanceInfoReplicator-0] DEBUG c.n.d.s.t.d.RedirectingEurekaHttpClient - Pinning to endpoint null
+14440 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - registration status: 204
+14442 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+14444 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+14447 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+14454 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+14456 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+14461 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+14463 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+14465 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+14468 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+14469 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+14472 [main] DEBUG c.n.h.c.m.e.HystrixMetricsPoller - Starting HystrixMetricsPoller
+14476 [main] INFO  o.s.c.n.h.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration - Starting poller
+14584 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9955 (http)
+14586 [main] INFO  o.s.c.n.e.EurekaDiscoveryClientConfiguration - Updating port to 9955
+14592 [main] INFO  com.proxy.app.ZuulProxyApplication - Started ZuulProxyApplication in 14.081 seconds (JVM running for 14.942)
+20330 [http-nio-9955-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+20359 [http-nio-9955-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+20378 [http-nio-9955-exec-1] INFO  o.s.c.n.zuul.web.ZuulHandlerMapping - Mapped URL path [/apv2/proxy/*] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+20378 [http-nio-9955-exec-1] INFO  o.s.c.n.zuul.web.ZuulHandlerMapping - Mapped URL path [/apv2/client-app/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+20378 [http-nio-9955-exec-1] INFO  o.s.c.n.zuul.web.ZuulHandlerMapping - Mapped URL path [/apv2/data-producer/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+20411 [http-nio-9955-exec-1] DEBUG c.n.z.h.HttpServletRequestWrapper - Path = null
+20411 [http-nio-9955-exec-1] DEBUG c.n.z.h.HttpServletRequestWrapper - Transfer-Encoding = null
+20411 [http-nio-9955-exec-1] DEBUG c.n.z.h.HttpServletRequestWrapper - Content-Encoding = null
+20412 [http-nio-9955-exec-1] DEBUG c.n.z.h.HttpServletRequestWrapper - Content-Length header = -1
+43788 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+43788 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+43789 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+43789 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+43789 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:56:18 IST 2017
+43789 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+44254 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+44255 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+44255 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+44255 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+44255 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+44255 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+44255 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 1, total allocated: 1 out of 200
+44255 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+44255 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 49 out of 50 [{}->http://localhost:8761][null]
+44255 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+44264 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+44264 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+44264 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+44264 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+44265 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+44265 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+44266 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+44266 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+44266 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+44266 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+44266 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+44266 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+44266 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+44266 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+44266 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+44268 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+73790 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+73790 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+73792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+73792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+73792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:56:48 IST 2017
+73792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+73792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:56:48 IST 2017
+73792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+74266 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+74266 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+74266 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+74266 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+74266 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+74269 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+74269 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 1, total allocated: 1 out of 200
+74269 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+74269 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 49 out of 50 [{}->http://localhost:8761][null]
+74269 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+74273 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+74274 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+74274 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+74274 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+74274 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+74274 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+74279 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+74279 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+74279 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+74279 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+74279 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+74279 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+74279 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+74279 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+74280 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+74280 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+103791 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+103791 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+103793 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+103793 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+103793 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:57:18 IST 2017
+103793 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+103793 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:57:18 IST 2017
+103793 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+104276 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+104276 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+104276 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+104276 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+104276 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+104281 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+104281 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 1, total allocated: 1 out of 200
+104281 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+104282 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 49 out of 50 [{}->http://localhost:8761][null]
+104282 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+104283 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+104283 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+104283 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+104283 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+104284 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+104284 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+104291 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+104291 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+104291 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+104291 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+104291 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+104291 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+104291 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+104292 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+104292 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+104292 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+133792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+133792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+133794 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+133794 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+133794 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:57:48 IST 2017
+133794 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+133794 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:57:48 IST 2017
+133794 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+134285 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+134285 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+134285 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+134285 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+134285 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+134292 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+134292 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 1, total allocated: 1 out of 200
+134292 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+134292 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 49 out of 50 [{}->http://localhost:8761][null]
+134292 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+134294 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+134295 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+134295 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+134295 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+134295 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+134295 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+134303 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+134303 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+134304 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+134304 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+134304 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+134304 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+134304 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+134305 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+134305 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+134306 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+163792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+163792 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+163796 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+163796 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+163796 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:58:18 IST 2017
+163796 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+163796 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:58:18 IST 2017
+163796 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+164298 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+164298 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+164298 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+164298 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+164298 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+164307 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+164307 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 1, total allocated: 1 out of 200
+164307 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+164307 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 49 out of 50 [{}->http://localhost:8761][null]
+164307 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+164307 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+164307 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+164307 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+164308 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+164308 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+164308 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+164319 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+164319 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+164319 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+164319 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+164319 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+164319 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+164319 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+164319 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+164320 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+164320 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+193793 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+193793 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+193798 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+193798 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+193798 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:58:48 IST 2017
+193798 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+193798 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:58:48 IST 2017
+193798 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+194309 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+194309 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+194309 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+194309 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+194309 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+194315 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+194315 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+194316 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+194316 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+194316 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+194316 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+194321 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+194321 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+194321 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+194329 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+194329 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+194329 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+194329 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+194329 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+194329 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+194329 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+194329 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+194330 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+194330 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+223794 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+223794 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+223799 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+223799 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+223799 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:59:18 IST 2017
+223799 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+224316 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+224316 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+224316 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+224316 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+224316 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+224323 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+224324 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+224324 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+224324 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+224324 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+224324 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+224331 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+224331 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+224331 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+224341 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+224341 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+224341 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+224342 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+224342 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+224342 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+224342 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+224342 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+224342 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+224343 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+253795 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+253795 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+253800 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+253800 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+253800 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 00:59:48 IST 2017
+253800 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+254325 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+254325 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+254325 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+254325 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+254325 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+254335 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+254335 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+254335 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+254335 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+254335 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+254335 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+254344 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+254344 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+254344 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+254352 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+283796 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+283796 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+283801 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+283801 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+283801 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 01:00:18 IST 2017
+283801 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+284336 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+284336 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+284336 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+284336 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+284336 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+284343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+284343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+284343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+284343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+284343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+284343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+284354 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+284354 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+284354 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+284361 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+284361 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+284361 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+284361 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+284361 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+284361 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+284361 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+284361 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+284362 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+284362 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+313797 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+313797 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+313802 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+313802 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+313802 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 01:00:48 IST 2017
+313802 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+314074 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+314074 [AsyncResolver-bootstrap-executor-0] DEBUG c.n.d.endpoint.EndpointUtils - The availability zone for the given region us-east-1 are [defaultZone]
+314074 [AsyncResolver-bootstrap-executor-0] DEBUG c.n.d.s.r.aws.ConfigClusterResolver - Config resolved to [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+314075 [AsyncResolver-bootstrap-executor-0] DEBUG c.n.d.s.r.a.ZoneAffinityClusterResolver - Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+314075 [AsyncResolver-bootstrap-executor-0] DEBUG c.n.d.shared.resolver.AsyncResolver - Resolved to [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+314343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+314343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+314343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+314343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+314343 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+314351 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+314352 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+314352 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+314352 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+314352 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+314352 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+314364 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+314364 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+314364 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+314372 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+314372 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+314372 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+314372 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+314372 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+314372 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+314372 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+314372 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+314372 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+314373 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+343799 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+343799 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+343803 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+343803 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+343803 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 01:01:18 IST 2017
+343803 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+344354 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+344354 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+344354 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+344355 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+344355 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+344362 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+344362 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+344362 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+344362 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+344362 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+344362 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+344373 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+344373 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+344373 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+344382 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+344382 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+344382 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+344382 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+344382 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+344382 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+344382 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+344382 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+344382 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+344383 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 
+373800 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+373800 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+373804 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than -1 SECONDS
+373804 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 0 SECONDS
+373804 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connection last used @ Mon Mar 13 01:01:48 IST 2017
+373804 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Deleting connection [{}->http://localhost:8761][null]
+374364 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+374364 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+374364 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - No free connections [{}->http://localhost:8761][null]
+374364 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+374364 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Creating new connection [{}->http://localhost:8761]
+374372 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+374372 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+374372 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+374372 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+374372 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/ZUUL-PROXY/localhost:zuul-proxy:9955; statusCode=200
+374372 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-PROXY/localhost:zuul-proxy:9955 - Heartbeat status: 200
+374384 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+374384 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+374384 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+374391 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+374391 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+374392 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+374392 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+374392 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+374392 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_3_
+374392 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:zuul-proxy:9955 to the existing apps in region null
+374392 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 1
+374392 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 3
+374392 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_3_, is fetching remote regions? false 

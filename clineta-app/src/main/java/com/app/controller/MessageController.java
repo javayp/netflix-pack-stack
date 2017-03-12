@@ -19,6 +19,7 @@ public class MessageController {
 
     @RequestMapping(value = "/message-data")
     public Map<String,DeviceClientData> getlatestMessage(){
+        System.out.println("Data contacted!!");
             return clientService.getAllMessages();
     }
 }
