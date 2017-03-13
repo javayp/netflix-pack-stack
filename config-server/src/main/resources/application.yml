@@ -6,8 +6,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/javayp/netflix-pack-stack/tree/master/device-global-config
-          search-paths:
-          - 'device*'
+          uri: https://github.com/javayp/spring-cloud-config-ba-tolls
           #username:
           #password:
