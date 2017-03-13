@@ -23,6 +23,7 @@ import java.io.InputStream;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableZuulProxy
+
 @ComponentScan("com.proxy")
 public class ZuulProxyApplication {
 
